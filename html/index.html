@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Digi - Your Tech World</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container-fluid px-4 px-xl-5">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <i class="bi bi-geo-alt me-2"></i>
+                        Phnom Penh, Cambodia
+                    </div>
+
+                    <div class="col-lg-2 d-none d-lg-block text-center">
+                        <i class="bi bi-truck me-2"></i>
+                        Free shipping on orders over $99
+                    </div>
+
+                    <div class="col-lg-2 d-none d-lg-block text-center">
+                        <i class="bi bi-telephone me-2"></i>
+                        (+855) 12 345 678
+                    </div>
+
+                    <div class="col-lg-2 text-end">
+                        <a href="#">Track Order</a>
+                        <span class="mx-2">|</span>
+                        <a href="#">Help Center</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg combuy-navbar sticky-top">
+            <div class="container-fluid px-3 px-xl-5">
+
+                <a class="navbar-brand" href="index.html">
+                    <span class="brand-icon">
+                        <i class="bi bi-laptop"></i>
+                    </span>
+
+                    <span class="brand-text">
+                        Modern<span>Digi</span>
+                        <small class="brand-tagline">Your Tech World</small>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combuyNavbar"
+                    aria-controls="combuyNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="combuyNavbar">
+
+                    <form class="search-form mx-lg-auto my-3 my-lg-0" action="products.html" method="GET">
+
+                        <input type="search" name="search" placeholder="Search computers, brands, accessories..."
+                            aria-label="Search products">
+
+                        <select name="category" aria-label="Select Category">
+                            <option value="">All Categories</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="desktop">Desktops</option>
+                            <option value="gaming">Gaming PCs</option>
+                            <option value="monitors">Monitors</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+
+                        <button type="submit" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                    <div class="navbar-actions">
+                       
+
+                        <a href="cart.html" class="header-action">
+                            <span class="cart-icon">
+                                <i class="bi bi-cart3"></i>
+                                <span class="cart-badge">0</span>
+                            </span>
+                            <span>Cart</span>
+                        </a>
+
+                        <a href="login.html" class="header-action">
+                            <i class="bi bi-person"></i>
+                            <span>Login</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="category-navbar">
+            <div class="container-fluid px-3 px-xl-5">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-2 mb-2 mb-lg-0">
+                        <a href="products.html" class="shop-category-btn">
+                            <i class="bi bi-list me-2"></i>
+                            Shop by Category
+                        </a>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <ul class="category-nav-links">
+
+                            <li>
+                                <a href="index.html" class="active">Home</a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="products.html" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                    Laptops
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="products.html?brand=ASUS">ASUS</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=MSI">MSI</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Acer">Acer</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Lenovo">Lenovo</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=HP">HP</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Dell">Dell</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Apple">Apple</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="products.html?category=accessories">Accessories</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="container-fluid px-4 px-xl-5">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 hero-content">
+
+                    <span class="hero-label">New Arrival</span>
+
+                    <h1 style="line-height: 90px;">
+                        Powerful Computers<br>
+                        <span>Unlock Every Possibility</span>
+                    </h1>
+
+                    <p>
+                        From high-speed performance to seamless portability,
+                        find the computer that fits your needs and helps you achieve your goals.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="products.html" class="btn btn-primary hero-btn">
+                            Shop Now
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+
+                        <a href="#brands" class="btn btn-outline-primary explore-btn">
+                            Explore Products
+                        </a>
+
+                    </div>
+
+                    <div class="hero-benefits">
+
+                        <div class="benefit-item">
+                            <i class="bi bi-shield-check"></i>
+                            <div>
+                                <strong>100%</strong>
+                                <small>Authentic Products</small>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <i class="bi bi-truck"></i>
+                            <div>
+                                <strong>Free Delivery</strong>
+                                <small>On orders over $99</small>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <i class="bi bi-arrow-repeat"></i>
+                            <div>
+                                <strong>Easy Returns & Exchange</strong>
+                                <small>Within 30 days</small>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <i class="bi bi-bag-check"></i>
+                            <div>
+                                <strong>Secure Payment</strong>
+                                <small>Protecting your information</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hero-image-column">
+
+                    <div class="discount-badge">
+                        <small>Up to</small>
+                        <strong>25%</strong>
+                        <span>OFF</span>
+                    </div>
+
+                    <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../images/banner.png" alt="Banner" class="d-block w-100 rounded-3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/banner1.png" alt="Banner" class="d-block w-100 rounded-3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/banner2.png" alt="Banner" class="d-block w-100 rounded-3">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5 bg-light" id="new-arrivals">
+        <div class="container-fluid px-4 px-xl-5">
+            <div class="mb-4 text-center">
+                <span class="hero-label text-primary fw-bold">Latest Technology</span>
+                <h2 class="fw-bold mt-2">
+                    New Arrivals <span>Coming Soon</span>
+                </h2>
+                <p class="text-secondary mb-0">
+                    Discover the latest computers and accessories for 2026.
+                </p>
+            </div>
+
+            <div class="container-fluid row g-4" id="new-product-list">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="brand-section p-5" id="brands">
+        <div class="container-fluid">
+
+            <div class="mb-4" style="border-left:8px solid rgb(52, 52, 249); padding:20px;">
+
+                <span class="hero-label">Famous Brands</span>
+
+                <h2 class="fw-bold mt-2">
+                    Explore <span>Our Brands</span>
+                </h2>
+
+                <p class="text-secondary">
+                    Find the technology that best fits your requirements.
+                </p>
+
+            </div>
+
+            <div class="row" id="category-list">
+            </div>
+        </div>
+    </section>
+
+    <section class="product-carousel-section p-5" id="products">
+        <div class="container-fluid">
+
+            <div class="p-5 d-flex justify-content-between mb-4"
+                style="border-left: 3px solid rgb(76, 76, 73); padding-left: 20px;">
+                <div>
+                    <span class="hero-label text-warning fw-bold">Best Sellers</span>
+                    <h2 class="fw-bold mt-2">
+                        Popular Products <span>from Our Customers</span>
+                    </h2>
+                    <p class="text-secondary mb-0">
+                        Explore modern products and high-quality electronics.
+                    </p>
+                </div>
+
+                <div class="d-none d-md-flex gap-2">
+                    <button class="btn btn-outline-primary rounded-circle swiper-button-prev-custom"
+                        style="width: 45px; height: 45px;">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="btn btn-primary rounded-circle swiper-button-next-custom"
+                        style="width: 45px; height: 45px;">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="swiper productSwiper">
+                <div class="swiper-wrapper" id="product-list">
+
+                </div>
+            </div>
+
+            <div class="swiper-pagination mt-4"></div>
+
+        </div>
+    </section>
+
+    <section class="container-fluid py-5 w-100">
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+                <div
+                    class="promo-banner banner-primary text-white p-4 p-md-5 rounded-4 position-relative overflow-hidden d-flex align-items-center shadow-sm">
+                    <div class="z-2 max-w-text">
+                        <span class="badge bg-white text-primary fw-bold mb-2 px-3 py-1 rounded-pill">Special
+                            Offer</span>
+                        <h3 class="fw-bold mb-2 display-6">Elevate Your Work</h3>
+                        <p class="text-white-50 mb-4 w-75">Modern laptops rich in features for work and entertainment.
+                        </p>
+                        <a href="products.html?category=laptop"
+                            class="btn btn-light rounded-pill px-4 py-2 fw-semibold text-dark shadow-sm hover-effect">
+                            Shop Laptops <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="banner-img-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0F7SF9oH6NtbyA9su5kMerWIYTjj12s2sTLS_yT94rSoTyvEq8DEtn_M&s=10"
+                            alt="Laptops" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div
+                    class="promo-banner banner-warning text-dark p-4 p-md-5 rounded-4 position-relative overflow-hidden d-flex align-items-center shadow-sm">
+                    <div class="z-2 max-w-text">
+                        <span class="badge bg-dark text-warning fw-bold mb-2 px-3 py-1 rounded-pill">New Arrival</span>
+                        <h3 class="fw-bold mb-2 display-6">Crystal Clear Audio</h3>
+                        <p class="text-secondary mb-4 w-75">High-quality headphones, keyboards, and mice to boost gaming
+                            and productivity performance.</p>
+                        <a href="products.html?category=accessories"
+                            class="btn btn-dark rounded-pill px-4 py-2 fw-semibold text-white shadow-sm hover-effect">
+                            Shop Accessories <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="banner-img-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nMcIWWo7d5RT__O-fCVl1pecjkVYVowEO85dMmohAw&s=10"
+                            alt="Keyboard and Mouse" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="why-choose-us py-5 bg-light border-top border-bottom">
+    <div class="container-fluid px-4 px-xl-5 py-lg-4">
+
+        <div class="text-center mb-5">
+            <span class="text-primary fw-semibold text-uppercase small">The Modern Digi Advantage</span>
+            <h2 class="fw-bold mt-2 mb-3">
+                Why Choose <span class="text-primary">Modern Digi?</span>
+            </h2>
+            <p class="text-secondary mx-auto mb-0" style="max-width: 600px;">
+                Shop with confidence knowing that quality products, dependable service,
+                and customer satisfaction always come first.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-6 col-lg-3">
+                <div class="bg-white rounded-4 h-100 p-4 text-center border shadow-sm">
+                    <div class="mb-4">
+                        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=500&q=80"
+                            alt="Quality electronic products"
+                            class="img-fluid rounded-3 w-100"
+                            style="height: 170px; object-fit: cover;">
+                    </div>
+                    <span class="badge bg-primary-subtle text-primary rounded-pill mb-3 px-3 py-2">
+                        Quality Guaranteed
+                    </span>
+                    <h5 class="fw-bold mb-3">100% Genuine Products</h5>
+                    <p class="text-secondary small mb-0">
+                        Discover authentic electronics sourced from trusted brands and suppliers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="bg-white rounded-4 h-100 p-4 text-center border shadow-sm">
+                    <div class="mb-4">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=500&q=80"
+                            alt="Packages ready for delivery"
+                            class="img-fluid rounded-3 w-100"
+                            style="height: 170px; object-fit: cover;">
+                    </div>
+                    <span class="badge bg-primary-subtle text-primary rounded-pill mb-3 px-3 py-2">
+                        Convenient Shopping
+                    </span>
+                    <h5 class="fw-bold mb-3">Fast & Reliable Delivery</h5>
+                    <p class="text-secondary small mb-0">
+                        Get your favorite technology delivered safely and conveniently to your doorstep.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="bg-white rounded-4 h-100 p-4 text-center border shadow-sm">
+                    <div class="mb-4">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=500&q=80"
+                            alt="Electronics maintenance and repair"
+                            class="img-fluid rounded-3 w-100"
+                            style="height: 170px; object-fit: cover;">
+                    </div>
+                    <span class="badge bg-primary-subtle text-primary rounded-pill mb-3 px-3 py-2">
+                        Extra Protection
+                    </span>
+                    <h5 class="fw-bold mb-3">Up to 2 Years Warranty</h5>
+                    <p class="text-secondary small mb-0">
+                        Enjoy added peace of mind with warranty coverage and dependable after-sales service.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="bg-white rounded-4 h-100 p-4 text-center border shadow-sm">
+                    <div class="mb-4">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=500&q=80"
+                            alt="Customer support team"
+                            class="img-fluid rounded-3 w-100"
+                            style="height: 170px; object-fit: cover;">
+                    </div>
+                    <span class="badge bg-primary-subtle text-primary rounded-pill mb-3 px-3 py-2">
+                        We're Here to Help
+                    </span>
+                    <h5 class="fw-bold mb-3">Dedicated Customer Support</h5>
+                    <p class="text-secondary small mb-0">
+                        Get helpful advice and assistance whenever you need help with your purchase.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-brand">
+                        <i class="bi bi-laptop"></i>
+                        <span>Modern<span>Digi</span></span>
+                    </a>
+
+                    <p class="footer-description">
+                        Your Tech World.
+                        Find suitable computers and accessories
+                        for study, work, and entertainment.
+                    </p>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6>Quick Links</h6>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6>Customer Service</h6>
+
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6>Contact Info</h6>
+
+                    <div class="footer-contact">
+                        <p>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Phnom Penh, Cambodia
+                        </p>
+
+                        <p>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+85512345678" class="text-decoration-none text-reset">
+                                (+855) 12 345 678
+                            </a>
+                        </p>
+
+                        <p>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:moderndigi@gmail.com" class="text-decoration-none text-reset">
+                                moderndigi@gmail.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <i class="bi bi-clock-fill"></i>
+                            Mon - Sat: 8:00 AM - 6:00 PM
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>
+                    © 2026 Modern Digi. All rights reserved.
+                </p>
+
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>

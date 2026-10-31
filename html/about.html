@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Modern Digi</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo1.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container-fluid px-4 px-xl-5">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <i class="bi bi-geo-alt me-2"></i>
+                        Phnom Penh, Cambodia
+                    </div>
+
+                    <div class="col-lg-2 d-none d-lg-block text-center">
+                        <i class="bi bi-truck me-2"></i>
+                        Free shipping on orders over $99
+                    </div>
+
+                    <div class="col-lg-2 d-none d-lg-block text-center">
+                        <i class="bi bi-telephone me-2"></i>
+                        (+855) 12 345 678
+                    </div>
+
+                    <div class="col-lg-2 text-end">
+                        <a href="#">Track Order</a>
+                        <span class="mx-2">|</span>
+                        <a href="#">Help Center</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg combuy-navbar sticky-top">
+            <div class="container-fluid px-3 px-xl-5">
+
+                <a class="navbar-brand" href="index.html">
+                    <span class="brand-icon">
+                        <i class="bi bi-laptop"></i>
+                    </span>
+
+                    <span class="brand-text">
+                        Modern<span>Digi</span>
+                        <small class="brand-tagline">Your Tech World</small>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combuyNavbar"
+                    aria-controls="combuyNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="combuyNavbar">
+
+                    <form class="search-form mx-lg-auto my-3 my-lg-0" action="products.html" method="GET">
+
+                        <input type="search" name="search" placeholder="Search computers, brands, accessories..."
+                            aria-label="Search products">
+
+                        <select name="category" aria-label="Select Category">
+                            <option value="">All Categories</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="desktop">Desktops</option>
+                            <option value="gaming">Gaming PCs</option>
+                            <option value="monitors">Monitors</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+
+                        <button type="submit" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                    <div class="navbar-actions">
+                       
+
+                        <a href="cart.html" class="header-action">
+                            <span class="cart-icon">
+                                <i class="bi bi-cart3"></i>
+                                <span class="cart-badge">0</span>
+                            </span>
+                            <span>Cart</span>
+                        </a>
+
+                        <a href="login.html" class="header-action">
+                            <i class="bi bi-person"></i>
+                            <span>Login</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="category-navbar">
+            <div class="container-fluid px-3 px-xl-5">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-2 mb-2 mb-lg-0">
+                        <a href="products.html" class="shop-category-btn">
+                            <i class="bi bi-list me-2"></i>
+                            Shop by Category
+                        </a>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <ul class="category-nav-links">
+
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="products.html" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                    Laptops
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="products.html?brand=ASUS">ASUS</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=MSI">MSI</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Acer">Acer</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Lenovo">Lenovo</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=HP">HP</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Dell">Dell</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Apple">Apple</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="products.html?category=accessories">Accessories</a></li>
+                            <li><a href="about.html" class="active">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="py-5 bg-light">
+            <div class="container-fluid px-4 px-xl-5">
+
+                <!-- Page Introduction -->
+                <div class="mb-5 text-center">
+                    <span class="hero-label text-primary fw-bold">
+                        About Us
+                    </span>
+
+                    <h1 class="fw-bold mt-2">
+                        Get to Know <span>Modern Digi</span>
+                    </h1>
+
+                    <p class="text-secondary">
+                        Your trusted technology partner for studying, working, and entertainment.
+                    </p>
+                </div>
+
+                <!-- Company Overview -->
+                <div class="row align-items-center g-5 mb-5">
+
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+                                alt="Our Team"
+                                class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover"
+                                style="height: 400px;">
+
+                            <div class="position-absolute bottom-0 start-0 bg-primary text-white p-4 rounded-end-4 rounded-bottom-4 shadow m-4 d-none d-md-block">
+                                <h3 class="fw-bold mb-0">5+ Years</h3>
+                                <small class="text-white-50">
+                                    Of Experience in the Technology Industry
+                                </small>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="ps-lg-4">
+
+                            <span class="badge bg-primary-subtle text-primary fw-bold mb-3 px-3 py-1 rounded-pill">
+                                Our History and Vision
+                            </span>
+
+                            <h2 class="fw-bold mb-3 display-6">
+                                Bringing Modern Technology to Every Customer
+                            </h2>
+
+                            <p class="text-secondary mb-4">
+                                Modern Digi was established with the goal of providing high-quality computers and accessories, backed by reliable manufacturer warranties. We believe that the right technology can improve productivity and help you achieve your goals more easily.
+                            </p>
+
+                            <div class="row g-3">
+
+                                <div class="col-6">
+                                    <div class="p-3 border rounded-3 bg-white shadow-sm">
+                                        <h4 class="fw-bold text-primary mb-1">100%</h4>
+                                        <small class="text-muted">
+                                            Genuine, High-Quality Products
+                                        </small>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="p-3 border rounded-3 bg-white shadow-sm">
+                                        <h4 class="fw-bold text-primary mb-1">10k+</h4>
+                                        <small class="text-muted">
+                                            Satisfied Customers
+                                        </small>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Mission -->
+                <div class="row align-items-center g-5 flex-lg-row-reverse mb-5">
+
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                                alt="Our Mission"
+                                class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover"
+                                style="height: 400px;">
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="pe-lg-4">
+
+                            <span class="badge bg-warning-subtle text-warning-emphasis fw-bold mb-3 px-3 py-1 rounded-pill">
+                                Our Mission
+                            </span>
+
+                            <h2 class="fw-bold mb-3 display-6">
+                                Fast, Reliable, and Trusted Service
+                            </h2>
+
+                            <p class="text-secondary mb-4">
+                                We do more than sell products. Our team of technical specialists is ready to provide expert advice and recommend computers that suit your specific needs. We also provide excellent after-sales support to ensure that you continue to receive help when you need it.
+                            </p>
+
+                            <a href="contact.html" class="btn btn-dark rounded-pill px-4 py-2 fw-semibold">
+                                Contact Us
+                                <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="row g-4 pt-4 border-top">
+
+                    <div class="col-12 text-center mb-3">
+
+                        <span class="badge bg-success-subtle text-success fw-bold mb-2 px-3 py-1 rounded-pill">
+                            Our Core Values
+                        </span>
+
+                        <h3 class="fw-bold">
+                            The Principles Behind Our Service
+                        </h3>
+
+                    </div>
+
+                    <!-- Quality -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80"
+                                alt="Quality Assurance"
+                                class="w-100 object-fit-cover"
+                                style="height: 200px;">
+
+                            <div class="card-body p-4">
+
+                                <h4 class="fw-bold mb-2">
+                                    Quality First
+                                </h4>
+
+                                <p class="text-secondary small mb-0">
+                                    Every product undergoes careful inspection to ensure that our customers receive high-quality products they can rely on.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trust and Responsibility -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+                                alt="Customer Support"
+                                class="w-100 object-fit-cover"
+                                style="height: 200px;">
+
+                            <div class="card-body p-4">
+
+                                <h4 class="fw-bold mb-2">
+                                    Trust and Responsibility
+                                </h4>
+
+                                <p class="text-secondary small mb-0">
+                                    We believe in honesty, reliable warranty policies, and resolving customer concerns quickly and efficiently.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Innovation -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80"
+                                alt="Innovation and Development"
+                                class="w-100 object-fit-cover"
+                                style="height: 200px;">
+
+                            <div class="card-body p-4">
+
+                                <h4 class="fw-bold mb-2">
+                                    Innovation and Growth
+                                </h4>
+
+                                <p class="text-secondary small mb-0">
+                                    We continuously explore new technologies to meet the changing needs of customers in the Cambodian market.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+
+                    <a href="index.html" class="footer-brand">
+                        <i class="bi bi-laptop"></i>
+                        <span>Modern<span>Digi</span></span>
+                    </a>
+
+                    <p class="footer-description">
+                        Your World of Technology. Find computers and accessories that suit your needs for studying, working, and entertainment.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Telegram">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+
+                    <h6>Quick Links</h6>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-lg-2 col-md-6">
+
+                    <h6>Customer Service</h6>
+
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns and Exchanges</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-2 col-md-6">
+
+                    <h6>Contact Information</h6>
+
+                    <div class="footer-contact">
+
+                        <p>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Phnom Penh, Cambodia
+                        </p>
+
+                        <p>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+85512345678" class="text-decoration-none text-reset">
+                                (+855) 12 345 678
+                            </a>
+                        </p>
+
+                        <p>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:moderndigi@gmail.com" class="text-decoration-none text-reset">
+                                moderndigi@gmail.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <i class="bi bi-clock-fill"></i>
+                            Monday - Saturday: 8:00 AM - 6:00 PM
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Modern Digi. All rights reserved.
+                </p>
+
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

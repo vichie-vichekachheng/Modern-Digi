@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Modern Digi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo1.png">
+</head>
+
+<body>
+
+    <header>
+       
+        <div class="top-bar">
+            <div class="container-fluid px-4 px-xl-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <i class="bi bi-geo-alt me-2"></i>Phnom Penh, Cambodia
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block text-center">
+                        <i class="bi bi-truck me-2"></i>Free shipping over $99
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block text-center">
+                        <i class="bi bi-telephone me-2"></i>(+855) 12 345 678
+                    </div>
+                    <div class="col-lg-2 text-end">
+                        <a href="#">Track Order</a>
+                        <span class="mx-2">|</span>
+                        <a href="#">Help Center</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg combuy-navbar position-sticky top-0 z-2 bg-white shadow-sm">
+            <div class="container-fluid px-3 px-xl-5">
+                <a class="navbar-brand" href="index.html">
+                    <span class="brand-icon"><i class="bi bi-laptop"></i></span>
+                    <span class="brand-text">Modern<span>Digi</span><small class="brand-tagline">Your Tech World</small></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combuyNavbar" aria-controls="combuyNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="combuyNavbar">
+                    <form class="search-form mx-lg-auto my-3 my-lg-0" action="products.html" method="GET">
+                        <input type="search" name="search" placeholder="Search computers, brands, and accessories..." aria-label="Search products">
+                        <select name="category" aria-label="Select category">
+                            <option value="">All Categories</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="desktop">Desktops</option>
+                            <option value="gaming">Gaming PCs</option>
+                            <option value="monitors">Monitors</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                        <button type="submit" aria-label="Search"><i class="bi bi-search"></i></button>
+                    </form>
+                    <div class="navbar-actions" id="nav-actions">
+                       
+                        <a href="cart.html" class="header-action">
+                            <span class="cart-icon"><i class="bi bi-cart3"></i><span class="cart-badge">0</span></span>
+                            <span>Cart</span>
+                        </a>
+                        <div id="auth-action-container">
+                            <a href="login.html" class="header-action"><i class="bi bi-person"></i><span>Login</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5 bg-light min-vh-100">
+        <div class="container px-4 px-xl-5">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item"><a href="cart.html" class="text-decoration-none">Cart</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                </ol>
+            </nav>
+
+            <h2 class="fw-bold mb-4 text-dark"><i class="bi bi-credit-card me-2"></i> Checkout</h2>
+
+            <form id="checkout-form">
+                <div class="row g-4">
+                    
+                    <div class="col-lg-7">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 bg-white">
+                            <h4 class="fw-bold mb-3 text-dark">Billing & Shipping Address</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">First Name</label>
+                                    <input type="text" class="form-control" required placeholder="John">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Last Name</label>
+                                    <input type="text" class="form-control" required placeholder="Doe">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Email Address</label>
+                                    <input type="email" class="form-control" required placeholder="john@example.com">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Phone Number</label>
+                                    <input type="tel" class="form-control" required placeholder="(+855) 12 345 678">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Street Address</label>
+                                    <input type="text" class="form-control" required placeholder="House number and street name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">City / District</label>
+                                    <input type="text" class="form-control" required placeholder="Phnom Penh">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Country</label>
+                                    <select class="form-select" required>
+                                        <option value="Cambodia" selected>Cambodia</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method Section -->
+                        <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+                            <h4 class="fw-bold mb-3 text-dark">Payment Option</h4>
+                            
+                            <div class="form-check mb-3 p-3 border rounded-3">
+                                <input class="form-check-input ms-0 me-3" type="radio" name="paymentMethod" id="paymentCod" value="cod" checked>
+                                <label class="form-check-label fw-semibold" for="paymentCod">
+                                    <i class="bi bi-cash-stack me-2 text-success fs-5"></i> Cash on Delivery (COD)
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-3 p-3 border rounded-3">
+                                <input class="form-check-input ms-0 me-3" type="radio" name="paymentMethod" id="paymentAba" value="aba">
+                                <label class="form-check-label fw-semibold" for="paymentAba">
+                                    <i class="bi bi-qr-code-scan me-2 text-primary fs-5"></i> ABA Pay / KHQR Code
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Summary Column -->
+                    <div class="col-lg-5">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 bg-white position-sticky" style="top: 100px;">
+                            <h4 class="fw-bold mb-3 text-dark">Order Summary</h4>
+                            
+                            <!-- Cart Items Preview Container -->
+                            <div id="checkout-items-list" class="mb-3 max-vh-50 overflow-auto pe-1">
+                                <!-- Populated dynamically by script -->
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-secondary">Subtotal</span>
+                                <span class="fw-bold text-dark" id="checkout-subtotal">$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-secondary">Shipping</span>
+                                <span class="fw-bold text-dark" id="checkout-shipping">Free</span>
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between mb-4">
+                                <span class="fs-5 fw-bold text-dark">Total</span>
+                                <span class="fs-4 fw-bold text-primary" id="checkout-total">$0.00</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark btn-lg w-100 py-3 fw-bold" style="border-radius: 10px;">
+                                <i class="bi bi-check-circle me-2"></i> Place Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-brand">
+                        <i class="bi bi-laptop"></i>
+                        <span>Modern<span>Digi</span></span>
+                    </a>
+                    <p class="footer-description">
+                        Your Tech World. Discover computers and accessories suited for your studies, work, and entertainment.
+                    </p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>© 2026 Modern Digi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function renderCheckoutSummary() {
+            const itemsContainer = document.getElementById("checkout-items-list");
+            const subtotalEl = document.getElementById("checkout-subtotal");
+            const shippingEl = document.getElementById("checkout-shipping");
+            const totalEl = document.getElementById("checkout-total");
+
+            const cart = JSON.parse(localStorage.getItem("modernDigiCart")) || [];
+
+            if (!itemsContainer) return;
+
+            if (cart.length === 0) {
+                itemsContainer.innerHTML = `<p class="text-muted text-center py-3">Your cart is empty.</p>`;
+                subtotalEl.textContent = "$0.00";
+                shippingEl.textContent = "$0.00";
+                totalEl.textContent = "$0.00";
+                return;
+            }
+
+            let subtotal = 0;
+
+            itemsContainer.innerHTML = cart.map(item => {
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+                return `
+                    <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: contain;" class="border rounded p-1">
+                            <div>
+                                <h6 class="fw-bold text-dark mb-0 text-truncate" style="max-width: 180px;">${item.name}</h6>
+                                <small class="text-muted">Qty: ${item.quantity}</small>
+                            </div>
+                        </div>
+                        <span class="fw-semibold text-dark">$${itemTotal.toFixed(2)}</span>
+                    </div>
+                `;
+            }).join('');
+
+            const shipping = subtotal > 99 || subtotal === 0 ? 0 : 10;
+            const grandTotal = subtotal + shipping;
+
+            subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+            shippingEl.textContent = shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`;
+            totalEl.textContent = `$${grandTotal.toFixed(2)}`;
+        }
+
+        // Handle Form Submission
+        document.getElementById("checkout-form")?.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const cart = JSON.parse(localStorage.getItem("modernDigiCart")) || [];
+            
+            if (cart.length === 0) {
+                alert("Your cart is empty! Please add some products before checking out.");
+                window.location.href = "products.html";
+                return;
+            }
+
+            alert("Thank you for your purchase! Your order has been placed successfully.");
+            
+        
+            localStorage.removeItem("modernDigiCart");
+            
+          
+            window.location.href = "index.html";
+        });
+
+      
+        renderCheckoutSummary();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+
+</html>
