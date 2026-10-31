@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details - Modern Digi</title>
+
+    <title>Shopping Cart - Modern Digi</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../images/logo1.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/logo1.png">
 </head>
 
 <body>
 
-   <header>
+    <header>
         <div class="top-bar">
             <div class="container-fluid px-4 px-xl-5">
                 <div class="row align-items-center">
@@ -151,78 +153,89 @@
         </nav>
     </header>
 
+
     <main class="py-5 bg-light min-vh-100">
-        <div class="container px-4 px-xl-5">
-            <nav aria-label="breadcrumb" class="mb-4">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
-                    <li class="breadcrumb-item"><a href="products.html" class="text-decoration-none">Products</a></li>
-                    <li class="breadcrumb-item active" aria-current="page" id="breadcrumb-title">Product Details</li>
-                </ol>
-            </nav>
+        <div class="container-fluid px-4 px-xl-5">
 
-            <div class="card border-0 shadow-sm rounded-4 p-4 p-lg-5 bg-white">
-                <div class="row g-5 align-items-center product-card">
-                    <div class="col-lg-6 text-center">
-                        <img id="detail-img" src="" alt="Product Image" class="img-fluid rounded-3"
-                            style="max-height: 400px; object-fit: contain;">
-                    </div>
-                    <div class="col-lg-6">
-                        <span id="detail-brand" class="badge bg-secondary mb-2">Brand</span>
-                        <h1 id="detail-name" class="fw-bold text-dark mb-3">Product Name</h1>
+            <div class="mb-4">
+                <h2 class="fw-bold text-dark">Shopping Cart</h2>
+                <p class="text-secondary">Review your selected tech items before checkout.</p>
+            </div>
 
-                        <div class="text-warning small mb-3">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                            <span id="detail-reviews" class="text-muted ms-1">(0 reviews)</span>
-                        </div>
-
-                        <div class="mb-4">
-                            <span id="detail-price" class="fs-3 fw-bold text-dark product-price">$0.00</span>
-                            <small id="detail-old-price"
-                                class="text-muted text-decoration-line-through ms-2 fs-5"></small>
-                        </div>
-
-                        <p class="text-secondary mb-4">
-                            Experience next-level performance, sleek modern design, and long-lasting battery life. Ideal
-                            for heavy workloads, gaming, and professional creative tasks.
-                        </p>
-
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-dark btn-lg py-3 add-to-cart-btn fw-bold"
-                                style="border-radius: 10px;">
-                                <i class="bi bi-cart3 me-2"></i> Add to Cart
-                            </button>
-                            <a href="products.html" class="btn btn-outline-secondary py-2 mt-2"
-                                style="border-radius: 10px;">
-                                Back to Products
-                            </a>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm rounded-3 p-3">
+                        <div class="table-responsive">
+                            <table class="table align-middle mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-table-body">
+                                   
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-            </div>
-           
-            <div class="container px-4 px-xl-5 mt-5">
-                <h3 class="fw-bold mb-4">You May Also Like</h3>
-                <div id="related-products-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                   
+
+                <div class="col-lg-4" id="cart-summary" style="display: none;">
+                    <div class="card border-0 shadow-sm rounded-3 p-4">
+                        <h5 class="fw-bold mb-3 text-dark">Order Summary</h5>
+                        <hr class="text-muted">
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-secondary">Subtotal</span>
+                            <span class="fw-semibold text-dark" id="cart-subtotal">$0.00</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-secondary">Shipping</span>
+                            <span class="fw-semibold text-success" id="cart-shipping">Free</span>
+                        </div>
+
+                        <hr class="text-muted">
+
+                        <div class="d-flex justify-content-between mb-4">
+                            <span class="fw-bold fs-5 text-dark">Grand Total</span>
+                            <span class="fw-bold fs-5 text-primary" id="cart-total">$0.00</span>
+                        </div>
+
+                        <button class="btn btn-primary text-white w-100 py-2 rounded-3 fw-bold mb-2">
+                            <a href="checkout.html" class="text-white">Proceed to Checkout</a>
+                        </button>
+
+                        <a href="products.html" class="btn btn-outline-secondary w-100 py-2 rounded-3">
+                            Continue Shopping
+                        </a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </main>
+
     <footer class="site-footer">
         <div class="container">
             <div class="row g-4">
+
                 <div class="col-lg-4 col-md-6">
                     <a href="index.html" class="footer-brand">
                         <i class="bi bi-laptop"></i>
                         <span>Modern<span>Digi</span></span>
                     </a>
+
                     <p class="footer-description">
-                        Your Tech World. Discover computers and accessories suited for your studies, work, and
-                        entertainment.
+                        Your World of Technology.
+                        Find computers and accessories that suit
+                        your needs for studying, working, and entertainment.
                     </p>
+
                     <div class="footer-socials">
                         <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                         <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
@@ -249,8 +262,8 @@
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="#">Frequently Asked Questions</a></li>
                         <li><a href="#">Warranty Policy</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns and Exchanges</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
@@ -258,19 +271,30 @@
                 <div class="col-lg-2 col-md-6">
                     <h6>Contact Information</h6>
                     <div class="footer-contact">
-                        <p><i class="bi bi-geo-alt-fill"></i>Phnom Penh, Cambodia</p>
-                        <p><i class="bi bi-telephone-fill"></i><a href="tel:+85512345678"
-                                class="text-decoration-none text-reset">(+855) 12 345 678</a></p>
-                        <p><i class="bi bi-envelope-fill"></i><a href="mailto:moderndigi@gmail.com"
-                                class="text-decoration-none text-reset">moderndigi@gmail.com</a></p>
-                        <p><i class="bi bi-clock-fill"></i>Mon - Sat: 8:00 AM - 6:00 PM</p>
+                        <p><i class="bi bi-geo-alt-fill"></i> Phnom Penh, Cambodia</p>
+                        <p>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+85512345678" class="text-decoration-none text-reset">
+                                (+855) 12 345 678
+                            </a>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:moderndigi@gmail.com" class="text-decoration-none text-reset">
+                                moderndigi@gmail.com
+                            </a>
+                        </p>
+                        <p><i class="bi bi-clock-fill"></i> Monday - Saturday: 8:00 AM - 6:00 PM</p>
                     </div>
                 </div>
+
             </div>
 
             <hr class="footer-divider">
+
             <div class="footer-bottom">
                 <p>© 2026 Modern Digi. All rights reserved.</p>
+
                 <div class="d-flex gap-3 flex-wrap">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Use</a>
@@ -278,11 +302,10 @@
             </div>
         </div>
     </footer>
-    <script src="../js/products.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../html/productDetails.html"></script>
+    <script src="/js/main.js"></script>
+     <script src="/js/products.js"></script>
+
 </body>
 
 </html>
