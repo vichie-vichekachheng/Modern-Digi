@@ -16,54 +16,129 @@
 
 <body>
 
-    <header>
-       
+     <header>
         <div class="top-bar">
             <div class="container-fluid px-4 px-xl-5">
                 <div class="row align-items-center">
+
                     <div class="col-lg-2 d-none d-lg-block">
-                        <i class="bi bi-geo-alt me-2"></i>Phnom Penh, Cambodia
+                        <i class="bi bi-geo-alt me-2"></i>
+                        Phnom Penh, Cambodia
                     </div>
+
                     <div class="col-lg-2 d-none d-lg-block text-center">
-                        <i class="bi bi-truck me-2"></i>Free shipping over $99
+                        <i class="bi bi-truck me-2"></i>
+                        Free shipping on orders over $99
                     </div>
+
                     <div class="col-lg-2 d-none d-lg-block text-center">
-                        <i class="bi bi-telephone me-2"></i>(+855) 12 345 678
+                        <i class="bi bi-telephone me-2"></i>
+                        (+855) 12 345 678
                     </div>
+
                     <div class="col-lg-2 text-end">
                         <a href="#">Track Order</a>
                         <span class="mx-2">|</span>
                         <a href="#">Help Center</a>
                     </div>
+
                 </div>
             </div>
         </div>
 
-        <!-- Main Navbar -->
-        <nav class="navbar navbar-expand-lg combuy-navbar position-sticky top-0 z-2 bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg combuy-navbar sticky-top">
             <div class="container-fluid px-3 px-xl-5">
+
                 <a class="navbar-brand" href="index.html">
-                    <span class="brand-icon"><i class="bi bi-laptop"></i></span>
-                    <span class="brand-text">Modern<span>Digi</span><small class="brand-tagline">Your Tech World</small></span>
+                    <span class="brand-icon">
+                        <i class="bi bi-laptop"></i>
+                    </span>
+
+                    <span class="brand-text">
+                        Modern<span>Digi</span>
+                        <small class="brand-tagline">Your Tech World</small>
+                    </span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combuyNavbar" aria-controls="combuyNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combuyNavbar"
+                    aria-controls="combuyNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="combuyNavbar">
+
                     <form class="search-form mx-lg-auto my-3 my-lg-0" action="products.html" method="GET">
-                        <input type="search" name="search" placeholder="Search computers, brands, and accessories..." aria-label="Search products">
-                        <button type="submit" aria-label="Search"><i class="bi bi-search"></i></button>
+
+                        <input type="search" name="search" placeholder="Search computers, brands, accessories..."
+                            aria-label="Search products">
+                        <button type="submit" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
                     </form>
-                    <div class="navbar-actions" id="nav-actions">
+                    <div class="navbar-actions">
                        
+
                         <a href="cart.html" class="header-action">
-                            <span class="cart-icon"><i class="bi bi-cart3"></i><span class="cart-badge">0</span></span>
+                            <span class="cart-icon">
+                                <i class="bi bi-cart3"></i>
+                                <span class="cart-badge">0</span>
+                            </span>
                             <span>Cart</span>
                         </a>
-                        <div id="auth-action-container">
-                            <a href="login.html" class="header-action"><i class="bi bi-person"></i><span>Login</span></a>
-                        </div>
+
+                        <a href="login.html" class="header-action">
+                            <i class="bi bi-person"></i>
+                            <span>Login</span>
+                        </a>
+
                     </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="category-navbar">
+            <div class="container-fluid px-3 px-xl-5">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-2 mb-2 mb-lg-0">
+                        <a href="products.html" class="shop-category-btn">
+                            <i class="bi bi-list me-2"></i>
+                            Shop by Category
+                        </a>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <ul class="category-nav-links">
+
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="products.html" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                    Laptops
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="products.html?brand=ASUS">ASUS</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=MSI">MSI</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Acer">Acer</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Lenovo">Lenovo</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=HP">HP</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Dell">Dell</a></li>
+                                    <li><a class="dropdown-item" href="products.html?brand=Apple">Apple</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="products.html?category=accessories">Accessories</a></li>
+                            <li><a href="about.html" class="active">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </nav>
